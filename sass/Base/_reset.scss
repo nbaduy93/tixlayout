@@ -1,0 +1,21 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body {
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.tix__container {
+    height: 100%;
+    margin: 0 auto;
+    max-width: 940px;
+    padding: 0 20px;
+    @media screen and (max-width: 950px) {
+        padding: 0 15px;
+    }
+}

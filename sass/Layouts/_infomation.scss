@@ -1,0 +1,112 @@
+.info {
+    .bg__info {
+        background: url(../../img/back-news.png) no-repeat;
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        padding-top: 120px;
+        height: 120px;
+        position: relative;
+    }
+    .info__content {
+        #info__tab {
+            justify-content: center;
+            align-items: flex-end;
+            border: none;
+            a {
+                border: none;
+                font-size: 20px;
+                color: $color-black-0;
+                font-weight: 500;
+                transition: all .2s;
+                &:hover {
+                    font-size: 24px;
+                }
+            }
+            a.active {
+                font-size: 24px;
+                color: $color-red-1;
+            }
+        }
+    }
+    .info__items {
+        padding: 0 7.5px;
+        img {
+            border-radius: 5px;
+        }
+        h3 {
+            @extend .text__line;
+        }
+        p {
+            text-align: justify;
+            font-size: 13px;
+            color: #4a4a4a;
+            padding: 0 5px 0 0;
+            line-height: 19px;
+            letter-spacing: .17;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            height: 55px;
+            margin-bottom: 15px;
+        }
+        .info__like {
+            margin-right: 25px;
+            cursor: pointer;
+            img {
+                vertical-align: middle;
+                margin-right: 10px;
+                margin-top: 2px;
+                height: auto;
+                width: 18px;
+                transition: all .2s;
+            }
+            span {
+                color: #bbb;
+                font-size: 12px;
+                line-height: 1;
+            }
+            &:hover img {
+                transform: scale(1.1)!important;
+            }
+        }
+    }
+    .info_bot {
+        .info__img--small {
+            border-radius: 3px;
+        }
+        .info__text--small {
+            @extend .text__line;
+            font-weight: 400;
+            color: #4a4a4a;
+            vertical-align: text-top;
+            padding: 0 15px 15px 0;
+            height: 40px;
+        }
+    }
+    .btn__readmore {
+        font-size: 14px;
+        color: #949494;
+        border: 1px solid #949494;
+        padding: 7px 25px;
+        transition: all .2s;
+        &:hover {
+            background-color: $color-red-0;
+            border-color: $color-red-0;
+            color: $color-white-0 !important;
+        }
+        &:focus {
+            outline: none;
+            box-shadow: none;
+        }
+    }
+    #dienAnh24hContent2,
+    #dienAnh24hContent3,
+    #reViewContent2,
+    #reViewContent3,
+    #khuyenMaiContent2,
+    #khuyenMaiContent3 {
+        display: none;
+    }
+}
