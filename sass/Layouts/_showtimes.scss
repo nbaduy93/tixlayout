@@ -14,6 +14,7 @@
             transition: all .5s;
             &:hover {
                 border: none;
+                opacity: 1;
             }
             &::after {
                 content: '';
@@ -38,7 +39,8 @@
     .showtheature__img {
         padding: 16px;
         border-bottom: 1px solid rgba(238, 238, 238, 0.88);
-        opacity: 1;
+        // opacity: 0.5;
+        // transition: all .5s;
         img {
             width: 50px;
             height: auto;
@@ -81,11 +83,15 @@
             >.nav-link {
                 position: absolute;
                 width: 100%;
-                height: 100px;
-                opacity: 0.000001;
+                height: 88px;
+                z-index: 999999999;
+                opacity: 0.5 !important;
             }
             .nav-link {
                 padding: 0;
+            }
+            >.nav-link.active {
+                opacity: 0 !important;
             }
             a {
                 border: none;

@@ -32,3 +32,45 @@ function xemThemReView() {
 function xemThemKhuyenMai() {
     countKM = xemThem(countKM, "khuyenMaiContent", "btnReadMore_KM");
 }
+/**
+ * B1: Khi forcus, hover vào thì đổi màu
+ * B2: thay đổi trạng thái của div .showtheature__img thêm vào 1 class mới
+ * B3: move class chuẩn cho .showtheature__img của tất cả trang khác
+ * 
+ */
+// document.querySelectorAll("#showtimes__myTab .nav-item>.nav-link")[0].addEventListener("click", function() {
+//     console.log(123);
+// });
+function xoaBlur(index) {
+    // for (var i = 1; i <= 6; i++) {
+    //     if (index === i) {
+    //         document.getElementsByClassName("showtheature__img" + i)[0].style.opacity = "1";
+    //     } else {
+    //         document.getElementsByClassName("showtheature__img" + i)[0].style.opacity = "0.5";
+    //     }
+    // }
+}
+
+function xoaBlur1() {
+    xoaBlur(1);
+}
+
+function xoaBlur2() {
+    xoaBlur(2);
+}
+
+function xoaBlur3() {
+    xoaBlur(3);
+}
+
+function xoaBlur4() {
+    xoaBlur(4);
+}
+
+function xoaBlur5() {
+    xoaBlur(5);
+}
+
+function xoaBlur6() {
+    xoaBlur(6);
+}
