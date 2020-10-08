@@ -19,3 +19,13 @@ body {
         padding: 0 15px;
     }
 }
+
+.bg__tix {
+    background: url(../../img/back-news.png) no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    padding-top: 120px;
+    height: 120px;
+    position: relative;
+}

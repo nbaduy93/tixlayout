@@ -49,7 +49,7 @@ body {
   }
 }
 
-.info .bg__info {
+.bg__tix {
   background: url(../../img/back-news.png) no-repeat;
   background-position: center;
   background-size: cover;
@@ -415,5 +415,113 @@ footer p a:hover {
   footer .footer__text {
     text-align: center;
   }
+}
+
+.showtimes .showtimetheature__cover {
+  border-right: 1px solid rgba(238, 238, 238, 0.88);
+}
+
+.showtimes #showtheature__myTab {
+  display: block !important;
+  text-align: center;
+  border: none;
+}
+
+.showtimes #showtheature__myTab a {
+  padding: 20px;
+  position: relative;
+  opacity: 0.5;
+  border: none;
+  transition: all .5s;
+}
+
+.showtimes #showtheature__myTab a:hover {
+  border: none;
+}
+
+.showtimes #showtheature__myTab a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  width: 60%;
+  background-color: rgba(238, 238, 238, 0.88);
+  display: block;
+  margin: 10px auto 0;
+}
+
+.showtimes #showtheature__myTab a.active {
+  opacity: 1;
+}
+
+.showtimes #showtheature__myTab img {
+  width: 50px;
+}
+
+.showtimes .showtheature__img {
+  padding: 16px;
+  border-bottom: 1px solid rgba(238, 238, 238, 0.88);
+  opacity: 1;
+}
+
+.showtimes .showtheature__img img {
+  width: 50px;
+  height: auto;
+}
+
+.showtimes .showtheature__img .px-1 {
+  line-height: 20px;
+}
+
+.showtimes #showtheature__myTabContent .pname__theature {
+  font-size: 14px;
+  color: #8bc541;
+  font-weight: 500;
+  line-height: 1.4;
+  margin-bottom: 0;
+}
+
+.showtimes #showtheature__myTabContent .pname__theature span {
+  color: black;
+}
+
+.showtimes #showtheature__myTabContent .pinfo__theature {
+  font-size: 12px;
+  line-height: 1.4;
+  color: #949494;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 0;
+}
+
+.showtimes #showtheature__myTabContent .adetail__theature {
+  color: #fb4226 !important;
+  font-size: 12px;
+}
+
+.showtimes #showtheature__myTabContent .adetail__theature:hover {
+  text-decoration: none;
+}
+
+.showtimes #showtimes__myTab li {
+  position: relative;
+}
+
+.showtimes #showtimes__myTab li > .nav-link {
+  position: absolute;
+  width: 100%;
+  height: 100px;
+  opacity: 0.000001;
+}
+
+.showtimes #showtimes__myTab li .nav-link {
+  padding: 0;
+}
+
+.showtimes #showtimes__myTab li a {
+  border: none;
 }
 /*# sourceMappingURL=main.css.map */

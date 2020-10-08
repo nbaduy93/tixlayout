@@ -1,0 +1,95 @@
+.showtimes {
+    .showtimetheature__cover {
+        border-right: 1px solid rgba(238, 238, 238, 0.88);
+    }
+    #showtheature__myTab {
+        display: block !important;
+        text-align: center;
+        border: none;
+        a {
+            padding: 20px;
+            position: relative;
+            opacity: 0.5;
+            border: none;
+            transition: all .5s;
+            &:hover {
+                border: none;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                bottom: 0;
+                left: 0;
+                right: 0;
+                height: 1px;
+                width: 60%;
+                background-color: rgba(238, 238, 238, 0.88);
+                display: block;
+                margin: 10px auto 0;
+            }
+        }
+        a.active {
+            opacity: 1;
+        }
+        img {
+            width: 50px;
+        }
+    }
+    .showtheature__img {
+        padding: 16px;
+        border-bottom: 1px solid rgba(238, 238, 238, 0.88);
+        opacity: 1;
+        img {
+            width: 50px;
+            height: auto;
+        }
+        .px-1 {
+            line-height: 20px;
+        }
+    }
+    #showtheature__myTabContent {
+        .pname__theature {
+            font-size: 14px;
+            color: #8bc541;
+            font-weight: 500;
+            line-height: 1.4;
+            margin-bottom: 0;
+            span {
+                color: black;
+            }
+        }
+        .pinfo__theature {
+            font-size: 12px;
+            line-height: 1.4;
+            color: #949494;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+            margin-bottom: 0;
+        }
+        .adetail__theature {
+            color: #fb4226!important;
+            font-size: 12px;
+            &:hover {
+                text-decoration: none;
+            }
+        }
+    }
+    #showtimes__myTab {
+        li {
+            position: relative;
+            >.nav-link {
+                position: absolute;
+                width: 100%;
+                height: 100px;
+                opacity: 0.000001;
+            }
+            .nav-link {
+                padding: 0;
+            }
+            a {
+                border: none;
+            }
+        }
+    }
+}
