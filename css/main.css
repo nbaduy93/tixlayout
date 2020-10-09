@@ -464,6 +464,8 @@ footer p a:hover {
 .showtimes .showtheature__img {
   padding: 16px;
   border-bottom: 1px solid rgba(238, 238, 238, 0.88);
+  opacity: 0.5;
+  transition: all .5s;
 }
 
 .showtimes .showtheature__img img {
@@ -514,16 +516,12 @@ footer p a:hover {
   position: absolute;
   width: 100%;
   height: 88px;
-  z-index: 999999999;
-  opacity: 0.5 !important;
+  z-index: 2;
+  opacity: 0;
 }
 
 .showtimes #showtimes__myTab li .nav-link {
   padding: 0;
-}
-
-.showtimes #showtimes__myTab li > .nav-link.active {
-  opacity: 0 !important;
 }
 
 .showtimes #showtimes__myTab li a {

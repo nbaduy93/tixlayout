@@ -2,6 +2,7 @@ var countDA = 1;
 var countRV = 1;
 var countKM = 1;
 var flag = true;
+clickBlur(1);
 
 function xemThem(count, id, btnId) {
     count++;
@@ -32,45 +33,41 @@ function xemThemReView() {
 function xemThemKhuyenMai() {
     countKM = xemThem(countKM, "khuyenMaiContent", "btnReadMore_KM");
 }
-/**
- * B1: Khi forcus, hover vào thì đổi màu
- * B2: thay đổi trạng thái của div .showtheature__img thêm vào 1 class mới
- * B3: move class chuẩn cho .showtheature__img của tất cả trang khác
- * 
- */
-// document.querySelectorAll("#showtimes__myTab .nav-item>.nav-link")[0].addEventListener("click", function() {
-//     console.log(123);
-// });
+var flagActive = false;
+
+function clickBlur(index) {
+    for (var i = 1; i <= 6; i++) {
+        if (index === i) {
+            document.getElementsByClassName("showtheature__img" + i)[0].style.opacity = "1";
+            flagActive = true;
+        } else {
+            document.getElementsByClassName("showtheature__img" + i)[0].style.opacity = "0.5";
+        }
+    }
+}
+
+function hoverBlur(index) {
+    var status;
+    var count = 0;
+    document.getElementsByClassName("showtheature__img" + index)[0].style.opacity = "1";
+    for (var i = 1; i <= 6; i++) {
+        status = document.getElementsByClassName("showtheature__img" + i)[0].style.opacity;
+        if (status === "1") {
+            count++;
+
+        }
+    }
+    if (count === 1) {
+        flagActive = true;
+    } else {
+        flagActive = false;
+    }
+
+}
+
 function xoaBlur(index) {
-    // for (var i = 1; i <= 6; i++) {
-    //     if (index === i) {
-    //         document.getElementsByClassName("showtheature__img" + i)[0].style.opacity = "1";
-    //     } else {
-    //         document.getElementsByClassName("showtheature__img" + i)[0].style.opacity = "0.5";
-    //     }
-    // }
-}
+    if (!flagActive) {
+        document.getElementsByClassName("showtheature__img" + index)[0].style.opacity = "0.5";
+    }
 
-function xoaBlur1() {
-    xoaBlur(1);
-}
-
-function xoaBlur2() {
-    xoaBlur(2);
-}
-
-function xoaBlur3() {
-    xoaBlur(3);
-}
-
-function xoaBlur4() {
-    xoaBlur(4);
-}
-
-function xoaBlur5() {
-    xoaBlur(5);
-}
-
-function xoaBlur6() {
-    xoaBlur(6);
 }
