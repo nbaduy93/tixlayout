@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tix.vn</title>
     <title>Udemy</title>
+    <!-- Font Ion -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
     <!-- FONT GOOGLE -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
     <!-- FONT AWSOME -->
@@ -15,14 +17,941 @@
     <link rel="stylesheet" type="text/css" href="./sass/Vendor/slick-theme.css" />
     <!-- BOOSTRAP -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-    <!-- Slick Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.1/jquery-migrate.min.js" integrity="sha512-wDH73bv6rW6O6ev5DGYexNboWMzBoY+1TEAx5Q/sdbqN2MB2cNTG9Ge/qv3c1QNvuiAuETsKJnnHH2UDJGmmAQ==" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="./sass/Vendor/slick.min.js"></script>
+    <!-- ModalVideo - CSS -->
+    <link rel="stylesheet" href="./sass/Vendor/modal-video.min.css">
     <!-- Main css -->
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
 <body>
+    <!-- HEADER GOES HERE -->
+    <header>
+        <div class="header__content">
+            <nav class="navbar navbar-expand-lg p-0">
+                <a class="navbar-brand header__left" href="#">
+                    <img src="./img/web-logo.png" alt="" />
+                </a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav">
+                        <li class="nav-item header__center">
+                            <ul>
+                                <li><a href="#">Lịch chiếu</a></li>
+                                <li><a href="#">Cụm rạp</a></li>
+                                <li><a href="#">Tin tức</a></li>
+                                <li><a href="#">Ứng dụng</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item header__right">
+                            <img src="./img/avatar.png" alt="" />
+                            <span id="spanLogin">Đăng nhập</span>
+                            <div class="dropdown">
+                                <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    <i class="fa fa-map-marker-alt"></i>
+                                    <span id="spanAddress">Hồ Chí Minh</span>
+                                </button>
+                                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                                    <a class="dropdown-item" href="#">Hồ Chí Minh</a>
+                                    <a class="dropdown-item" href="#">Hà Nội</a>
+                                    <a class="dropdown-item" href="#">Đà Nẵng</a>
+                                    <a class="dropdown-item" href="#">Hải Phòng</a>
+                                    <a class="dropdown-item" href="#">Biên Hòa</a>
+                                    <a class="dropdown-item" href="#">Nha Trang</a>
+                                    <a class="dropdown-item" href="#">Bình Dương</a>
+                                    <a class="dropdown-item" href="#">Phan Thiết</a>
+                                    <a class="dropdown-item" href="#">Hạ Long</a>
+                                    <a class="dropdown-item" href="#">Cần Thơ</a>
+                                    <a class="dropdown-item" href="#">Vũng Tàu</a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- HEADER ENDS HERE -->
+
+    <!-- CAROUSEL GOES HERE -->
+    <section class="carouselSection">
+        <div class="carousel__content">
+            <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                    <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="https://s3img.vcdn.vn/123phim/2020/09/dong-gia-1k-ve-khi-mua-ve-qua-tix-16011908558560.jpg" alt="">
+                        <a href="https://www.youtube.com/watch?v=XRm1P7oGpMQ&ab_channel=CJEntertainmentVietnam">
+                            <i class="fa fa-play"></i>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://s3img.vcdn.vn/123phim/2020/09/rom-c18-16008300686919.png" alt="">
+                        <a href="https://www.youtube.com/watch?v=XRm1P7oGpMQ&ab_channel=CJEntertainmentVietnam">
+                            <i class="fa fa-play"></i>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://s3img.vcdn.vn/123phim/2020/09/greenland-tham-hoa-thien-thach-16000538668854.png" alt="">
+                        <a href="https://www.youtube.com/watch?v=XRm1P7oGpMQ&ab_channel=CJEntertainmentVietnam">
+                            <i class="fa fa-play"></i>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://s3img.vcdn.vn/123phim/2020/09/ac-quy-doi-dau-deliver-us-from-evil-c16-15994546580686.jpg" alt="">
+                        <a href="https://www.youtube.com/watch?v=XRm1P7oGpMQ&ab_channel=CJEntertainmentVietnam">
+                            <i class="fa fa-play"></i>
+                        </a>
+                    </div>
+                    <div class="carousel-item">
+                        <img src="https://s3img.vcdn.vn/123phim/2020/08/tenet-15984144207145.png" alt="">
+                        <a href="https://www.youtube.com/watch?v=XRm1P7oGpMQ&ab_channel=CJEntertainmentVietnam">
+                            <i class="fa fa-play"></i>
+                        </a>
+                    </div>
+                </div>
+                <a class="carousel-control-prev left__control" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                    <i class="ionicons ion-ios-arrow-left"></i>
+                </a>
+                <a class="carousel-control-next right__control" href="#carouselExampleIndicators" role="button" data-slide="next">
+                    <i class="ionicons ion-ios-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+    <!-- CAROUSEL ENDS HERE  -->
+
+    <!-- COMINGSOON GOES HERE -->
+    <section class="comingSoon">
+        <div class="comingSoon__content">
+            <div class="bookTicket row">
+                <div class="col-4 bookTicket__col chooseMovie">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">     
+                            <span>Phim</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#">Ác Quỷ Đối Đầu - Deliver Us From Evil - (C18)</a>
+                            <a class="dropdown-item" href="#">Tenet - (C16)</a>
+                            <a class="dropdown-item" href="#">Ròm - (C18)</a>
+                            <a class="dropdown-item" href="#">Gia Đình Chân To Phiêu Lưu Ký - Bigfoot Family - (P)</a>
+                            <a class="dropdown-item" href="#">Dinh Thự Xác Sống - Zombie Mansion</a>
+                            <a class="dropdown-item" href="#">Vì Sao Đưa Bạn Tới - Jungle Beat - (P)</a>
+                            <a class="dropdown-item" href="#">Bà Tôi Là Công Chúa - Oh! My Gran - (C16)</a>
+                            <a class="dropdown-item" href="#">Mượn Xác - Unfamiliar - (C18)</a>
+                            <a class="dropdown-item" href="#">Trò Chơi Của Quỷ - Await The Dawn - (C18)</a>
+                            <a class="dropdown-item" href="#">Xứ Sở Phép Thuật - The Magic Kids: Three Unlikely Heroes - (P)</a>
+                            <a class="dropdown-item" href="#">Greenland: Thảm Họa Thiên Thạch - Greenland - (C16)</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 bookTicket__col chooseTheater">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Rạp</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 bookTicket__col chooseDay">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Ngày xem</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 bookTicket__col chooseTime">
+                    <div class="dropdown">
+                        <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <span>Xuất chiếu</span>
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                            <a class="dropdown-item" href="#"></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-2 bookTicket__button">
+                    <div class="btn btn-secondary">MUA VÉ NGAY</div>
+                </div>
+            </div>
+            <div class="moviesSection">
+                <ul class="nav nav-tabs" id="myTab" role="tablist">
+                    <li class="nav-item active" role="presentation">
+                        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#playingMovie" role="tab" aria-controls="home" aria-selected="true">Đang Chiếu</a>
+                    </li>
+                    <li class="nav-item" role="presentation">
+                        <a class="nav-link" id="home-tab" data-toggle="tab" href="#comingMovie" role="tab" aria-controls="home" aria-selected="true">Sắp Chiếu</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active single-item" id="playingMovie" role="tabpanel" aria-labelledby="home-tab">
+                        <div id="playingMoviesCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="playing__first__tab movies__tab">
+                                        <div class="moviesList row">
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/08/ac-quy-doi-dau-deliver-us-from-evil-c16-15984134403610_215x318.png" alt="">
+                                                    <!-- <img id="moviesLabel" src="./img/film_type_1.png" alt=""> -->
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Ác Quỷ Đối Đầu - Deliver Us From Evil - (C18)</p>
+                                                    <p>100 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/09/ava-c18-16013505082995_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>AVA - (C18)</p>
+                                                    <p>0 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/09/turu-ga-tay-me-quay-turu-the-wacky-hen-p-15989328795127_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="greenLabel">P</span>Turu: Gà Tây Mê Quẩy - Turu: The Wacky Hen - (P)</p>
+                                                    <p>80 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/09/rom-c18-15996245056088_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Ròm - (C18)</p>
+                                                    <p>91 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="moviesList row">
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2019/12/tenet-15768107031731_215x318.jpg" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C16</span>Telnet - (C16)</p>
+                                                    <p>120 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/09/cuc-no-hoa-cuc-cung-pawn-p-16012814841278_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="greenLabel">P</span>Cục Nợ Hóa Cục Cưng - Pawn - (P)</p>
+                                                    <p>113 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/09/da-quy-rung-sau-the-widow-c18-16014343362627_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Dạ Quỷ Rừng Sâu - The Widow - (C18)</p>
+                                                    <p>85 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/09/di-nhan-bong-toi-transference-dark-mutants-c18-16014352020306_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Dị Nhân Bóng Tối - Tranference: Dark Mutants...</p>
+                                                    <p>100 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="playing__second__tab movies__tab">
+                                        <div class="moviesList row">
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/09/tro-choi-cua-quy-await-the-dawn-c18-16003162927818_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Trò Chơi Của Quỷ - Await The Dawn - (C18)</p>
+                                                    <p>87 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/09/ba-toi-la-cong-chua-oh-my-gran-p-15995397465350_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Bà Tôi Là Công Chúa - Oh! My Gran - (C16)</p>
+                                                    <p>0 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/09/phong-thu-dia-cau-invasion-16001386066185_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C16</span>Phòng Thủ Địa Cầu - Invasion - (CN16)</p>
+                                                    <p>134 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/08/di-nhan-the-he-moi-the-new-mutants-15985206098391_215x318.jpg" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C16</span>Dị Nhân Thế Hệ Mới - The New Mutants - (C16)</p>
+                                                    <p>100 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="moviesList row">
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/123phim/2017/11/coco-15096135820977.jpg" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="greenLabel">P</span>CoCo - Chiếu Lại - (P)</p>
+                                                    <p>109 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2019/12/tenet-15768107031731_215x318.jpg" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Ác Quỷ Đối Đầu - Deliver Us From Evil - (C18)</p>
+                                                    <p>100 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/09/rom-c18-15996245056088_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Ác Quỷ Đối Đầu - Deliver Us From Evil - (C18)</p>
+                                                    <p>100 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/09/gia-dinh-chan-to-phieu-luu-ky-bigfoot-family-p-16002260737824_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Ác Quỷ Đối Đầu - Deliver Us From Evil - (C18)</p>
+                                                    <p>100 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="playing__third__tab movies__tab">
+                                        <div class="moviesList row">
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/09/gia-dinh-chan-to-phieu-luu-ky-bigfoot-family-p-16002260737824_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="greenLabel">P</span>Gia Đình Chân To Phiêu Lưu Ký - Bigfoot Family - (P)</p>
+                                                    <p>89 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/123phim/2020/09/dinh-thu-xac-song-zombie-mansion-16003984156095.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span>P</span>Dinh Thự Xác Sống - Zombie Mansion - (P)</p>
+                                                    <p>0 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/09/muon-xac-unfamiliar-c18-16001396975900_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Mượn Xác - Unfamiliar - (C18)</p>
+                                                    <p>89 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/08/greenland-tham-hoa-thien-thach-greenland-c16-15970526975367_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C16</span>Greenland: Thảm Họa Thiên Thạch - Greenland - (C16)</p>
+                                                    <p>100 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="moviesList row">
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/08/ac-quy-doi-dau-deliver-us-from-evil-c16-15984134403610_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Hãy Nói Yêu Anh - Say: I Love You - (C18)</p>
+                                                    <p>102 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/09/chiec-ba-lo-dam-mau-range-runners-c18-16012609085120_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Chiếc Ba Lô Đẫm Máu - Range Runners - (C18)</p>
+                                                    <p>107 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3"></div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev left__control" href="#playingMoviesCarousel" role="button" data-slide="prev">
+                                <i class="ionicons ion-ios-arrow-left"></i>
+                            </a>
+                            <a class="carousel-control-next right__control" href="#playingMoviesCarousel" role="button" data-slide="next">
+                                <i class="ionicons ion-ios-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade show single-item" id="comingMovie" role="tabpanel" aria-labelledby="home-tab">
+                        <div id="comingMoviesCarousel" class="carousel slide" data-ride="carousel" data-interval="false">
+                            <div class="carousel-inner">
+                                <div class="carousel-item active">
+                                    <div class="coming__first__tab movies__tab">
+                                        <div class="moviesList row">
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/10/trai-xac-song-the-clearing-c18-16018860556392_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Trại Xác Sống - The Clearing - (C18)</p>
+                                                    <p>88 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/10/sai-gon-trong-con-mua-saigon-in-the-rain-c16-16018703546576_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C16</span>Sài Gòn Trong Cơn Mưa - Saigon In The Rain - (C16)</p>
+                                                    <p>105 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/chong-nguoi-ta-c18-15956920983516_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Chồng Người Ta - (C18)</p>
+                                                    <p>90 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/the-hitman-s-wife-s-bodyguard-15956913075013_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="greenLabel">P</span>The Hitman's Wife's Bodyguard - (P)</p>
+                                                    <p>100 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="moviesList row">
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/06/nhung-co-vo-hanh-dong-c13-15915148162466_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C13</span>Những Cô Vợ Hành Động - (C13)</p>
+                                                    <p>100 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/07/ti-hon-hau-dau-the-elfkins-baking-a-difference-p-15961040339604_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="greenLabel">P</span>Tí Hon Hậu Đậu - Elfkins Baking A Difference - (P)</p>
+                                                    <p>78 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/03/monster-hunter-15831375198444_215x318.jpg" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="greenLabel">P</span>Monster Hunter - (P)</p>
+                                                    <p>0 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/02/vung-dat-cam-lang-ii-a-quiet-place-part-ii-c18-15825341168754_215x318.jpg" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="redLabel">C18</span>Vùng Đất Câm Lặng II - A Quiet Place Part II - (C18)</p>
+                                                    <p>100 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="carousel-item">
+                                    <div class="coming__second__tab movies__tab">
+                                        <div class="moviesList row">
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/03/gia-dinh-mitchells-hanh-trinh-ket-noi-15832940018055_215x318.jpg" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="greenLabel">P</span>Gia Đình Michelle - Hành Trình Kết Nối - (P)</p>
+                                                    <p>0 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2019/08/kingsman-khoi-nguon-the-king-s-man-15668754953595_215x318.jpg" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="greenLabel">P</span>Kingsman: Khởi Nguồn - The Kingsman - (P)</p>
+                                                    <p>100 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/02/candyman-15828766263432_215x318.jpg" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="greenLabel">P</span>Sát Nhân Trong Gương - Candyman - (P)</p>
+                                                    <p>0 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/05/song-song-15894321913877_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="greenLabel">P</span>Song Song - (P)</p>
+                                                    <p>100 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="moviesList row">
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/08/the-witches-15970443317206_215x318.png" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="greenLabel">P</span>The Witches - (P)</p>
+                                                    <p>100 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="movieColumn col-12 col-md-6 col-lg-3">
+                                                <div class="movie__image">
+                                                    <img src="https://s3img.vcdn.vn/mobile/123phim/2020/04/vo-dien-sat-nhan-15879786166726_215x318.jpg" alt="">
+                                                    <div class="black__overlay">
+                                                        <a href="">
+                                                            <i class="fa fa-play"></i>
+                                                        </a>
+                                                    </div>
+                                                </div>
+                                                <div class="movie__content">
+                                                    <p><span id="greenLabel">P</span>Sát Nhân Vô Diện - (P)</p>
+                                                    <p>100 phút</p>
+                                                    <div class="getTicket">
+                                                        <button>
+                                                            MUA VÉ
+                                                        </button>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <a class="carousel-control-prev left__control" href="#comingMoviesCarousel" role="button" data-slide="prev">
+                                <i class="ionicons ion-ios-arrow-left"></i>
+                            </a>
+                            <a class="carousel-control-next right__control" href="#comingMoviesCarousel" role="button" data-slide="next">
+                                <i class="ionicons ion-ios-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- COMINGSOON ENDS HERE -->
+
     <!-- Showtimes -->
     <section class="showtimes">
         <div class="tix__container">
@@ -1370,12 +2299,23 @@
         </div>
     </footer>
     <!-- BOOSTRAP -->
-    <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+    <!-- ModalVideo - Javascripts -->
+    <script src="http://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="./js/modal-video.js"></script>
+
     <!-- Slick Carousel -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.1/jquery-migrate.min.js" integrity="sha512-wDH73bv6rW6O6ev5DGYexNboWMzBoY+1TEAx5Q/sdbqN2MB2cNTG9Ge/qv3c1QNvuiAuETsKJnnHH2UDJGmmAQ==" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-migrate/3.3.1/jquery-migrate.min.js"></script>
     <script src="./sass/Vendor/slick.min.js"></script>
+
+    <!-- LIBRARIES ENDS HERE -->
+
+    <script>
+        $(".js-modal-btn").modalVideo();
+    </script>
 
     <!-- APPS Carousel -->
     <script>

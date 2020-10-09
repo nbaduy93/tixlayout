@@ -59,6 +59,568 @@ body {
   position: relative;
 }
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+header {
+  padding: 10px 20px;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+  background-color: rgba(255, 255, 255, 0.95);
+}
+
+header .header__content .navbar .navbar-brand img {
+  width: 50px;
+  height: 50px;
+}
+
+header .header__content .navbar #navbarSupportedContent {
+  position: relative;
+}
+
+header .header__content .navbar #navbarSupportedContent .header__center {
+  position: absolute;
+  top: 50%;
+  left: 48%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+}
+
+header .header__content .navbar #navbarSupportedContent .header__center ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+}
+
+header .header__content .navbar #navbarSupportedContent .header__center ul li a {
+  color: #29303b;
+  transition: all .2s;
+  text-decoration: none;
+  margin-right: 20px;
+  cursor: pointer;
+  font-size: 14px;
+  line-height: 1.42857143;
+  margin-right: 20px;
+}
+
+header .header__content .navbar #navbarSupportedContent .header__center ul li a:hover {
+  color: #fb4226;
+}
+
+header .header__content .navbar #navbarSupportedContent .header__right {
+  position: absolute;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+header .header__content .navbar #navbarSupportedContent .header__right img {
+  height: auto;
+  width: 30px;
+  border-radius: 25px;
+  margin-right: 5px;
+}
+
+header .header__content .navbar #navbarSupportedContent .header__right span {
+  color: #9b9b9b;
+  position: relative;
+}
+
+header .header__content .navbar #navbarSupportedContent .header__right .dropdown {
+  display: inline-block;
+}
+
+header .header__content .navbar #navbarSupportedContent .header__right .dropdown .btn:focus {
+  box-shadow: none;
+}
+
+header .header__content .navbar #navbarSupportedContent .header__right .dropdown i {
+  color: #9b9b9b;
+}
+
+header .header__content .navbar #navbarSupportedContent .header__right .dropdown #dropdownMenuButton {
+  position: relative;
+  border: 0;
+  margin-left: 10px;
+  padding: 6px 25px;
+  border-radius: 0;
+  border-left: 1px solid #9b9b9b;
+}
+
+header .header__content .navbar #navbarSupportedContent .header__right .dropdown #dropdownMenuButton::after {
+  position: absolute;
+  top: 50%;
+  right: 0%;
+  transform: translateY(-50%);
+  color: #9b9b9b;
+}
+
+.carouselSection .carousel__content {
+  position: relative;
+}
+
+.carouselSection .carousel__content #carouselExampleIndicators .carousel-indicators {
+  position: absolute;
+  bottom: 12%;
+}
+
+.carouselSection .carousel__content #carouselExampleIndicators .carousel-indicators li {
+  display: inline-block;
+  margin-right: 10px;
+  width: 15px;
+  height: 12px;
+  background-color: #d8d8d8;
+  border: 0;
+  border-radius: 50%;
+}
+
+.carouselSection .carousel__content #carouselExampleIndicators .carousel-indicators .active {
+  background-color: #fb4226;
+}
+
+.carouselSection .carousel__content #carouselExampleIndicators .carousel-inner .carousel-item {
+  position: relative;
+}
+
+.carouselSection .carousel__content #carouselExampleIndicators .carousel-inner .carousel-item img {
+  width: 100%;
+}
+
+.carouselSection .carousel__content #carouselExampleIndicators .carousel-inner .carousel-item a {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 80px;
+  height: 80px;
+  border: 2px solid white;
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: rgba(0, 0, 0, 0.39);
+}
+
+.carouselSection .carousel__content #carouselExampleIndicators .carousel-inner .carousel-item a i {
+  color: white;
+  font-size: 20px;
+}
+
+.carouselSection .carousel__content #carouselExampleIndicators .left__control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: none;
+}
+
+.carouselSection .carousel__content #carouselExampleIndicators .left__control .ion-ios-arrow-left {
+  font-size: 80px;
+  opacity: .5;
+  margin-left: 50px;
+}
+
+.carouselSection .carousel__content #carouselExampleIndicators .right__control {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: none;
+}
+
+.carouselSection .carousel__content #carouselExampleIndicators .right__control .ion-ios-arrow-right {
+  font-size: 80px;
+  opacity: .5;
+  margin-right: 50px;
+}
+
+@media screen and (max-width: 576px) {
+  .carouselSection .carousel__content {
+    display: none;
+  }
+}
+
+.comingSoon {
+  padding: 0px 330px;
+}
+
+.comingSoon .comingSoon__content {
+  position: relative;
+}
+
+.comingSoon .comingSoon__content .bookTicket {
+  position: absolute;
+  top: -50px;
+  width: 100%;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+  border-radius: 7px;
+  background-color: #fff;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.comingSoon .comingSoon__content .bookTicket .bookTicket__col {
+  padding: 20px;
+}
+
+.comingSoon .comingSoon__content .bookTicket .bookTicket__col .dropdown-toggle {
+  position: relative;
+  padding: 0;
+}
+
+.comingSoon .comingSoon__content .bookTicket .chooseMovie .dropdown-toggle::after {
+  position: absolute;
+  right: -278px;
+  top: 50%;
+  color: #9b9b9b;
+  transform: translateY(-50%);
+}
+
+.comingSoon .comingSoon__content .bookTicket .chooseTheater .dropdown-toggle::after {
+  position: absolute;
+  right: -110px;
+  top: 50%;
+  color: #9b9b9b;
+  transform: translateY(-50%);
+}
+
+.comingSoon .comingSoon__content .bookTicket .chooseDay .dropdown-toggle::after {
+  position: absolute;
+  right: -72px;
+  top: 50%;
+  color: #9b9b9b;
+  transform: translateY(-50%);
+}
+
+.comingSoon .comingSoon__content .bookTicket .chooseTime .dropdown-toggle::after {
+  position: absolute;
+  right: -70px;
+  top: 50%;
+  color: #9b9b9b;
+  transform: translateY(-50%);
+}
+
+.comingSoon .comingSoon__content .bookTicket .bookTicket__button {
+  padding: 20px;
+}
+
+.comingSoon .comingSoon__content .bookTicket .bookTicket__button .btn-secondary {
+  width: 100%;
+}
+
+.comingSoon .comingSoon__content .moviesSection {
+  position: absolute;
+  width: 100%;
+}
+
+.comingSoon .comingSoon__content .moviesSection .nav-tabs {
+  margin: 30px 0;
+  margin-top: 75px;
+  display: flex;
+  justify-content: center;
+  border: 0;
+}
+
+.comingSoon .comingSoon__content .moviesSection .nav-tabs .nav-item {
+  padding: 10px 15px;
+}
+
+.comingSoon .comingSoon__content .moviesSection .nav-tabs .nav-item .active {
+  color: #fb4226;
+  font-size: 24px;
+}
+
+.comingSoon .comingSoon__content .moviesSection .nav-tabs .nav-item a {
+  font-size: 20px;
+  line-height: 24px;
+  height: 24px;
+  border: 0;
+  transition: 0.3s all;
+  color: black;
+}
+
+.comingSoon .comingSoon__content .moviesSection .nav-tabs .nav-item a:hover {
+  font-size: 24px;
+  color: #fb4226;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent {
+  display: flex;
+  justify-content: center;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .movies__tab .moviesList {
+  margin: 0;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent #playingMoviesCarousel,
+.comingSoon .comingSoon__content .moviesSection #myTabContent #comingMoviesCarousel {
+  position: relative;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent #playingMoviesCarousel .left__control,
+.comingSoon .comingSoon__content .moviesSection #myTabContent #comingMoviesCarousel .left__control {
+  position: absolute;
+  left: -120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  background: none;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent #playingMoviesCarousel .left__control .ion-ios-arrow-left,
+.comingSoon .comingSoon__content .moviesSection #myTabContent #comingMoviesCarousel .left__control .ion-ios-arrow-left {
+  font-size: 80px;
+  opacity: 0.5;
+  margin-left: 50px;
+  color: #9b9b9b;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent #playingMoviesCarousel .right__control,
+.comingSoon .comingSoon__content .moviesSection #myTabContent #comingMoviesCarousel .right__control {
+  position: absolute;
+  right: -120px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background: none;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent #playingMoviesCarousel .right__control .ion-ios-arrow-right,
+.comingSoon .comingSoon__content .moviesSection #myTabContent #comingMoviesCarousel .right__control .ion-ios-arrow-right {
+  font-size: 80px;
+  opacity: 0.5;
+  margin-right: 50px;
+  color: #9b9b9b;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList {
+  padding: 0;
+  width: 100%;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn {
+  padding: 20px 10px 0;
+  margin: 0;
+  margin-bottom: 25px;
+  cursor: pointer;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__image {
+  position: relative;
+  width: 100%;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__image img {
+  height: 100%;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__image #moviesLabel {
+  position: absolute;
+  right: 0;
+  top: -50%;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__image .black__overlay {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  background: linear-gradient(to top, black, rgba(0, 0, 0, 0));
+  display: flex;
+  border-radius: 5px;
+  align-items: center;
+  justify-content: center;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__image .black__overlay a {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  border: 2px solid white;
+  position: relative;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__image .black__overlay a i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 15px;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__content {
+  position: relative;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__content p {
+  height: 42px;
+  max-height: 42px;
+  font-size: 16px;
+  color: #000;
+  line-height: 22px;
+  margin-bottom: 0;
+  margin: 15px 0;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__content p #redLabel {
+  color: #fff;
+  background-color: #fb4226;
+  border: 1px solid #fb4226;
+  border-radius: 5px;
+  margin-right: 8px;
+  padding: 0 5px;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__content p #greenLabel {
+  color: #fff;
+  background-color: #00ac4d;
+  border: 1px solid #00ac4d;
+  border-radius: 5px;
+  margin-right: 8px;
+  padding: 0 5px;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__content .getTicket {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__content .getTicket button {
+  opacity: 0;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  color: #fff;
+  font-size: 18px !important;
+  padding: 10px;
+  text-align: center;
+  background: linear-gradient(to left, #fb4226, #ce3017 100%);
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn:hover .movie__image .black__overlay {
+  opacity: 1;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn:hover .movie__content p {
+  opacity: 0;
+}
+
+.comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn:hover .movie__content .getTicket button {
+  opacity: 1;
+}
+
+@media screen and (max-width: 576px) {
+  .comingSoon {
+    padding: 0;
+  }
+  .comingSoon .comingSoon__content .bookTicket {
+    display: none;
+  }
+  .comingSoon .comingSoon__content .moviesSection .nav-tabs {
+    margin-top: 100px;
+  }
+  .comingSoon .comingSoon__content .moviesSection .nav-tabs .nav-item {
+    padding: 0;
+  }
+  .comingSoon .comingSoon__content .moviesSection #home-tab {
+    font-size: 16px;
+  }
+  .comingSoon .comingSoon__content .moviesSection #home-tab:focus {
+    font-size: 18px;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #playingMoviesCarousel .left__control,
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #comingMoviesCarousel .left__control {
+    display: none;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #playingMoviesCarousel .left__control .ion-ios-arrow-left,
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #comingMoviesCarousel .left__control .ion-ios-arrow-left {
+    display: none;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #playingMoviesCarousel .right__control,
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #comingMoviesCarousel .right__control {
+    display: none;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #playingMoviesCarousel .right__control .ion-ios-arrow-right,
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #comingMoviesCarousel .right__control .ion-ios-arrow-right {
+    display: none;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__content {
+    display: none;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__content .getTicket {
+    display: none;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn:hover .movie__image .black__overlay {
+    opacity: 1;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn:hover .movie__content p {
+    opacity: 0;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn:hover .movie__content .getTicket button {
+    opacity: 1;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .comingSoon {
+    padding: 0 100px;
+  }
+  .comingSoon .comingSoon__content .moviesSection .nav-tabs .nav-item {
+    padding: 0;
+  }
+  .comingSoon .comingSoon__content .moviesSection #home-tab {
+    font-size: 16px;
+  }
+  .comingSoon .comingSoon__content .moviesSection #home-tab:focus {
+    font-size: 18px;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #playingMoviesCarousel .left__control,
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #comingMoviesCarousel .left__control {
+    display: none;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #playingMoviesCarousel .left__control .ion-ios-arrow-left,
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #comingMoviesCarousel .left__control .ion-ios-arrow-left {
+    display: none;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #playingMoviesCarousel .right__control,
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #comingMoviesCarousel .right__control {
+    display: none;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #playingMoviesCarousel .right__control .ion-ios-arrow-right,
+  .comingSoon .comingSoon__content .moviesSection #myTabContent #comingMoviesCarousel .right__control .ion-ios-arrow-right {
+    display: none;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__content {
+    display: none;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn .movie__content .getTicket {
+    display: none;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn:hover .movie__image .black__overlay {
+    opacity: 1;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn:hover .movie__content p {
+    opacity: 0;
+  }
+  .comingSoon .comingSoon__content .moviesSection #myTabContent .moviesList .movieColumn:hover .movie__content .getTicket button {
+    opacity: 1;
+  }
+}
+
 .info .info__content #info__tab {
   justify-content: center;
   align-items: flex-end;
